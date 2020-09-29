@@ -1,17 +1,21 @@
 from skpy import Skype
 
-_SKYPE_ID = ''
-_SKYPE_PASS = ''
+_SKYPE_ID = 'Skype_User_ID'
+_SKYPE_PASS = 'Skype_User_Passeord'
 
 _CONN = Skype(_SKYPE_ID, _SKYPE_PASS)
 
+# Getting User, Contact and Chat information 
 _CONN.user
 _CONN.contacts
 _CONN.chats
 
-print(_CONN.chats.recent())
+#Setting up Receiver 
+_CH = _CONN.chats["USER/GROUP_ID"]
 
-_CH = _CONN.chats["19:c096722edf1343d5a3dbc8420910e50a@thread.skype"]
-_CH.sendMsg("Hey there, this is a test message!")
-_CH.sendFile(open("/home/arnabb/Documents/satuday-school/2-python-automation/saturday.jpg", "rb"), "saturday.jpg")
+# Sending Text Message
+_CH.sendMsg("This message is automated using Python.")
+
+# For Attachment
+_CH.sendFile(open("PATH_TO_FILE", "rb"), "ENCODING_FILE_NAME")
 
