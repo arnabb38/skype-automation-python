@@ -17,5 +17,5 @@ _CH = _CONN.chats["USER/GROUP_ID"]
 _CH.sendMsg("This message is automated using Python.")
 
 # For Attachment
-_CH.sendFile(open("PATH_TO_FILE", "rb"), "ENCODING_FILE_NAME")
+_CH.sendFile(open("assets/example.com", "rb"), "example.jpg")
 
