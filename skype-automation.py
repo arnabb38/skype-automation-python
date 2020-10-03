@@ -1,3 +1,5 @@
+# Author: Arnab Basak
+
 from skpy import Skype
 
 _SKYPE_ID = 'Skype_User_ID'
