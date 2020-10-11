@@ -23,3 +23,6 @@ pip install SkPy
 ### Arnab Basak
 - [x] Linkedin: [@arnab-basak](https://linkedin.com/in/arnab-basak)
 - [x] Github: [@arnabb38](https://github.com/arnabb38)
+
+
+## Give a **STAR** to the project, if that project helped you. Thank you. :)  
